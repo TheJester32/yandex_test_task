@@ -1,6 +1,11 @@
 import './index.html';
 import './index.scss';
-import { mult, sum } from './modules/calc';
+import { animOnScroll } from './modules/animation';
 
-console.log(mult(2, 2));
-console.log(sum(2, 2));
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelector('.header__picture').classList.add('_anim-items');
+document.querySelector('.header__pictureText').classList.add('_anim-items');
+setTimeout(() => {
+    animOnScroll();
+}, 300);
+});
