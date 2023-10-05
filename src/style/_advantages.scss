@@ -1,0 +1,26 @@
+.advantages{
+    li{
+        list-style: none;
+    }
+    &__title{
+        font-family: 'font-black';
+        font-weight: 900px;
+        font-size: 58px;
+        line-height: 56px;
+        padding: 0px 800px 48px 410px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        margin-left: 410px;
+        padding-left: 0px;
+    }
+    &__item-text{
+        font-family: 'font-medium';
+        font-weight: 500px;
+        font-size: 24px;
+        line-height: 28.8px;
+        padding-right: 100px;
+        padding-bottom: 61px;
+    }
+}
