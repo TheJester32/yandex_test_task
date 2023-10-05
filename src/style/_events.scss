@@ -1,0 +1,62 @@
+.events{
+    position: relative;
+    padding-bottom: 80px;
+    &__title{
+        font-family: 'font-black';
+        font-weight: 900px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-left: 410px;
+        padding-right: 600px;
+    }
+    &__text{
+        font-family: 'font-medium';
+        font-weight: 500px;
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-left: 410px;
+        padding-right: 805px;
+        margin-right: 250px;
+        margin-bottom: 70px;
+    }
+
+    &__pictures{
+        display: grid;
+        grid-template-columns: 500px;
+        margin-left: 410px;
+    }
+
+    &__picture{
+        padding-bottom: 8.11px;
+    }
+}
+
+#upper-pic{
+    position: absolute;
+    top: 180px;
+    left: 900px;
+}
+
+#lower-pic{
+    position: absolute;
+    top: 660px;
+    left: 900px;
+}
+
+#geo{
+    position: absolute;
+    top: 275px;
+    left: 155px;
+}
+
+#sticks{
+    position: absolute;
+    top: 33px;
+    left: 1160px;
+}
+
+#coffe{
+    position: absolute;
+    top: 805px;
+    left: 1020px;
+}

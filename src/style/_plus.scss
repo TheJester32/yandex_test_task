@@ -1,0 +1,33 @@
+.plus {
+    position: relative;
+    &__title {
+        font-family: 'font-black';
+        font-weight: 900px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-left: 410px;
+        padding-right: 1100px;
+    }
+
+    &__text {
+        font-family: 'font-medium';
+        font-weight: 500px;
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-left: 410px;
+        padding-right: 1000px;
+        margin-right: 70px;
+    }
+}
+
+.plus-scooter{
+    position: absolute;
+    top: -250px;
+    left: 700px;
+}
+
+.tablet{
+    position: absolute;
+    top: 45px;
+    left: 850px;
+}
