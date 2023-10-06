@@ -1,7 +1,30 @@
 body{
-    font-family: 'font-regular';
-    background-color: $back;
-    color: $text;
-    user-select: none;
-    margin: 0px;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+    &__container {
+      overflow-x: hidden;
+      font-family: 'font-regular', 'font-medium', 'font-black', sans-serif;
+      background-color: $back;
+      color: $text;
+      user-select: none;
+      margin: 0px;
+    
+        background-color: #ffff;
+    
+        @media (min-width: $mobile-width) {
+          width: 320px;
+          margin: 0 auto;
+        }
+    
+        @media (min-width: $tablet-width) {
+          width: 768px;
+          margin: 0 auto;
+        }
+    
+        @media (min-width: $desktop-width) {
+          width: 1200px;
+          margin: 0 auto;
+        }
+      }
 }

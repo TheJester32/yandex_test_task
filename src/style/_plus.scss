@@ -1,33 +1,60 @@
 .plus {
     position: relative;
     &__title {
-        font-family: 'font-black';
-        font-weight: 900px;
-        font-size: 48px;
-        line-height: 48px;
-        margin-left: 410px;
-        padding-right: 1100px;
+        @media (min-width: $tablet-width) {
+            font-family: 'font-black';
+            font-weight: 900px;
+            font-size: 46px;
+            padding: 0px 50px 5px 100px;
+           }
+        @media (min-width: $desktop-width) {
+            font-size: 48px;
+            line-height: 48px;
+            width: 427px;
+            margin: 0px;
+            padding: 20px 0px 8px 242px;
     }
-
+    }
     &__text {
-        font-family: 'font-medium';
-        font-weight: 500px;
-        font-size: 24px;
-        line-height: 28.8px;
-        margin-left: 410px;
-        padding-right: 1000px;
-        margin-right: 70px;
+        @media (min-width: $tablet-width) {
+            font-family: 'font-medium';
+            font-weight: 500px;
+            font-size: 18px;
+            padding: 0px 50px 61px 100px;
+            line-height: 24px;
+        }
+        @media (min-width: $desktop-width) {
+            width: 420px;
+            font-size: 24px;
+            line-height: 28.8px;
+            margin-left: 242px;
+            margin-bottom: 70px;
+            padding: 0px;
     }
+}
 }
 
 .plus-scooter{
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    @media (min-width: $desktop-width) {
+    display: block;
+    width: 720px;
     position: absolute;
-    top: -250px;
-    left: 700px;
+    top: -150px;
+    left: 557px;
+}
 }
 
 .tablet{
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    @media (min-width: $desktop-width) {
+    display: block;
     position: absolute;
-    top: 45px;
-    left: 850px;
+    top: 85px;
+    left: 650px;
+    }
 }
