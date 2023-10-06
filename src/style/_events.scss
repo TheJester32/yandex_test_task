@@ -2,61 +2,113 @@
     position: relative;
     padding-bottom: 80px;
     &__title{
-        font-family: 'font-black';
-        font-weight: 900px;
+        @media (min-width: $tablet-width) {
+            font-family: 'font-black';
+            font-weight: 900px;
+            font-size: 46px;
+            padding: 0px 150px 0px 100px;
+        }
+        @media (min-width: $desktop-width) {
         font-size: 48px;
         line-height: 48px;
-        margin-left: 410px;
-        padding-right: 600px;
+        width: 827px;
+        margin: 0px;
+        padding: 20px 0px 48px 242px;
+
     }
+}
     &__text{
-        font-family: 'font-medium';
-        font-weight: 500px;
+        @media (min-width: $tablet-width) {
+            font-family: 'font-medium';
+            font-weight: 500px;
+            font-size: 18px;
+            padding: 0px 50px 61px 100px;
+            line-height: 24px;
+        }
+        @media (min-width: $desktop-width) {
+        width: 440px;
         font-size: 24px;
         line-height: 28.8px;
-        margin-left: 410px;
-        padding-right: 805px;
-        margin-right: 250px;
+        margin-left: 242px;
         margin-bottom: 70px;
+        padding: 0px;
     }
+}
 
     &__pictures{
+        @media (min-width: $tablet-width) {
+            margin-left: 50px;
+        }
+        @media (min-width: $desktop-width) {
         display: grid;
         grid-template-columns: 500px;
-        margin-left: 410px;
+        margin-left: 242px;
+        width: 599px;
     }
+}
 
     &__picture{
-        padding-bottom: 8.11px;
+        @media (min-width: $tablet-width) {
+            width: 320px;
+        }
+        @media (min-width: $desktop-width) {
+            width: 472px;
+            padding-bottom: 8.11px;
     }
+}
 }
 
 #upper-pic{
+    @media (min-width: $desktop-width) {
     position: absolute;
     top: 180px;
-    left: 900px;
+    left: 730px;
+    }
 }
 
 #lower-pic{
+    @media (min-width: $desktop-width) {
     position: absolute;
     top: 660px;
-    left: 900px;
+    left: 730px;
+    }
 }
 
 #geo{
-    position: absolute;
-    top: 275px;
-    left: 155px;
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        top: 270px;
+        left: -65px;
+    }
+    @media (min-width: $desktop-width) {
+    top: 345px;
+    left: 135px;
+    }
 }
 
 #sticks{
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        top: 220px;
+        left: 475px;
+    }
+    @media (min-width: $desktop-width) {
     position: absolute;
-    top: 33px;
-    left: 1160px;
+    top: 80px;
+    left: 1010px;
+    }
 }
 
 #coffe{
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        top: 740px;
+        left: 330px;
+    }
+    @media (min-width: $desktop-width) {
     position: absolute;
-    top: 805px;
-    left: 1020px;
+    width: 320px;
+    top: 960px;
+    left: 960px;
+}
 }
