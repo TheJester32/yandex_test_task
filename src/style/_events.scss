@@ -1,11 +1,22 @@
 .events{
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
+    @media (min-width: $tablet-width) {
+        max-width: 768px;
+    }
     &__title{
-        @media (min-width: $tablet-width) {
+        @media (min-width: $mobile-width) {
             font-family: 'font-black';
             font-weight: 900px;
+            font-size: 32px;
+            line-height: 32px;
+            width: 300px;
+            padding: 0px 0px 0px 32px;
+            margin-top: 0;
+            }
+        @media (min-width: $tablet-width) {
             font-size: 46px;
+            line-height: 46px;
             padding: 0px 150px 0px 100px;
         }
         @media (min-width: $desktop-width) {
@@ -18,11 +29,20 @@
     }
 }
     &__text{
-        @media (min-width: $tablet-width) {
+        @media (min-width: $mobile-width) {
+            margin: 0;
             font-family: 'font-medium';
             font-weight: 500px;
+            font-size: 16px;
+            line-height: 19.2px;
+            width: 311px;
+            padding-left: 32px;
+            padding-bottom: 46px;
+        }
+        @media (min-width: $tablet-width) {
+            width: 330px;
             font-size: 18px;
-            padding: 0px 50px 61px 100px;
+            padding: 0px 0px 61px 100px;
             line-height: 24px;
         }
         @media (min-width: $desktop-width) {
@@ -36,11 +56,15 @@
 }
 
     &__pictures{
+        @media (min-width: $mobile-width) {
+            display: none;
+        }
         @media (min-width: $tablet-width) {
             margin-left: 50px;
+            display: grid;
+            grid-template-columns: 320px 320px;
         }
         @media (min-width: $desktop-width) {
-        display: grid;
         grid-template-columns: 500px;
         margin-left: 242px;
         width: 599px;
@@ -55,6 +79,41 @@
             width: 472px;
             padding-bottom: 8.11px;
     }
+}
+&__slider{
+    @media (min-width: $mobile-width) {
+        margin-bottom: 10px;
+        height: 343px;
+        margin-left: 32px;
+    }
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+&__slider-line{
+    @media (min-width: $mobile-width) {
+        position: relative;
+        width: 1372px;
+        height: 343px;
+        display: flex;
+        justify-content: space-around;
+        left: 0;
+        transition: all ease 1s;
+    }
+}
+&__slider-picture{
+    width: 343px;
+    padding-left: 16px;
+}
+&__arrow{
+    cursor: pointer;
+    margin-left: 10px;
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+&__arrows-wrapper{
+    margin-left: 120px;
 }
 }
 
@@ -75,9 +134,13 @@
 }
 
 #geo{
+    @media (min-width: $mobile-width) {
+        display: none;
+    }
     @media (min-width: $tablet-width) {
+        display: block;
         position: absolute;
-        top: 270px;
+        top: 330px;
         left: -65px;
     }
     @media (min-width: $desktop-width) {
@@ -87,28 +150,39 @@
 }
 
 #sticks{
-    @media (min-width: $tablet-width) {
+    @media (min-width: $mobile-width) {
         position: absolute;
-        top: 220px;
-        left: 475px;
+         top: 230px;
+        left: 155px;
+    }
+    @media (min-width: $tablet-width) {
+        top: 350px;
+        left: 545px;
     }
     @media (min-width: $desktop-width) {
-    position: absolute;
     top: 80px;
     left: 1010px;
     }
 }
 
 #coffe{
+    @media (min-width: $mobile-width) {
+        display: none;
+    }
     @media (min-width: $tablet-width) {
+        display: block;
         position: absolute;
-        top: 740px;
-        left: 330px;
+        top: 945px;
+        left: 514px;
     }
     @media (min-width: $desktop-width) {
     position: absolute;
     width: 320px;
     top: 960px;
-    left: 960px;
+    left: 970px;
 }
 }
+
+// #arrowLeft{
+//     fill: #fff;
+// }
