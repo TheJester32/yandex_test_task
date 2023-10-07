@@ -1,10 +1,17 @@
 .plus {
     position: relative;
     &__title {
-        @media (min-width: $tablet-width) {
+        @media (min-width: $mobile-width) {
             font-family: 'font-black';
             font-weight: 900px;
+            font-size: 32px;
+            line-height: 32px;
+            width: 300px;
+            padding: 0px 0px 0px 32px;
+            }
+        @media (min-width: $tablet-width) {
             font-size: 46px;
+            line-height: 42px;
             padding: 0px 50px 5px 100px;
            }
         @media (min-width: $desktop-width) {
@@ -16,9 +23,18 @@
     }
     }
     &__text {
-        @media (min-width: $tablet-width) {
+        @media (min-width: $mobile-width) {
+            margin: 0;
             font-family: 'font-medium';
             font-weight: 500px;
+            font-size: 16px;
+            line-height: 19.2px;
+            width: 312px;
+            padding-bottom: 24px;
+            padding-left: 32px;
+        }
+        @media (min-width: $tablet-width) {
+            width: 412px;
             font-size: 18px;
             padding: 0px 50px 61px 100px;
             line-height: 24px;
@@ -29,15 +45,13 @@
             line-height: 28.8px;
             margin-left: 242px;
             margin-bottom: 70px;
-            padding: 0px;
+            padding: 10px 0px 0px 0px;
     }
 }
 }
 
 .plus-scooter{
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
+    display: none;
     @media (min-width: $desktop-width) {
     display: block;
     width: 720px;
@@ -48,9 +62,7 @@
 }
 
 .tablet{
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
+    display: none;
     @media (min-width: $desktop-width) {
     display: block;
     position: absolute;
